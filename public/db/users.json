@@ -1,0 +1,36 @@
+[{
+    "id":1,
+    "name":"Александр",
+    "email":"cenitelas1@gmail.com",
+    "password":"896325",
+    "phone":"+77757810307"
+},
+{
+    "id":2,
+    "name":"Анатолий",
+    "email":"tolk@mail.ru",
+    "password":"123321",
+    "phone":"+77757757757"
+},
+{
+    "id":3,
+    "name":"Вероника",
+    "email":"nika@bk.ru",
+    "password":"77777777",
+    "phone":"+7785490849"
+},
+{
+    "id":4,
+    "name":"Ольга",
+    "email":"olga22@mail.ru",
+    "password":"2325",
+    "phone":"+77012273551"
+},
+{
+    "id":5,
+    "name":"Константин",
+    "email":"kostya@mail.ru",
+    "password":"150515",
+    "phone":"+77017777777"
+}
+]
