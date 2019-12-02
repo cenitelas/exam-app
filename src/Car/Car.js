@@ -1,19 +1,20 @@
 import React from 'react';
 import {Container,Row,Col,Image} from 'react-bootstrap'
 import './Car.css'
+import {Link} from 'react-router-dom';
 
 class Car extends React.Component{
     render(){
         var car = this.props.car;
         return(
-            <div className="car">
+           <div className="car">
                 {car && <Container>
                     <Row>
                         <Col xs={1} md={1}>
                         <Image src={car.image} rounded />
                         </Col>
                         <Col xs={1} md={9}>
-                            <h3>{car.head}</h3>
+                        <Link to={"/"+car.id}><h3>{car.head}</h3></Link>
                             <Col>{car.text}</Col>
                         </Col>
                         <Col xs={1} md={2}>
@@ -24,7 +25,7 @@ class Car extends React.Component{
                         </Col>
                     </Row>
                 </Container>}
-            </div>
+            </div> 
         )
     }
 }

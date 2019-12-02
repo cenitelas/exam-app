@@ -7,6 +7,7 @@ import HeadContainer from '../Head/HeadContainer'
 import LkContainer from '../Lk/LkContainer';
 import UserProducts from '../Lk/UserProducts';
 import UserFavorites from '../Lk/UserFavorites';
+import CarViewContainer from '../CarView/CarViewContainer'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/lk" component={LkContainer}></Route>
           <Route exact path="/lk/products" component={UserProducts}></Route>
           <Route exact path="/lk/favorite" component={UserFavorites}></Route>
+          <Route exact path="/:id" component={CarViewContainer}></Route>
      </Switch>
     </div>
   );

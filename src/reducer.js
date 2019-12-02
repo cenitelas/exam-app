@@ -1,6 +1,7 @@
 import {categories,filter,search,products} from './Main/reducer';
 import {user,error} from './Logon/reducer'
 import {userProducts, favorites} from './Lk/reducer'
+import {car,comments} from "./CarView/reducer"
 import {combineReducers} from 'redux';
 
-export default()=>combineReducers({products,categories,filter,search,user,error,userProducts,favorites});
+export default()=>combineReducers({products,categories,filter,search,user,error,userProducts,favorites,car,comments});
