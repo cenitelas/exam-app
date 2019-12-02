@@ -1,0 +1,28 @@
+.comment{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.37);
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.comment p{
+    text-align: left;
+}
+
+.comment p:nth-child(1){
+    width: 100%;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.comment p:nth-child(2){
+    margin: 0 30px;
+}
+.comment span{
+    color: grey;
+    font-size: 100%;
+    text-shadow: none;
+    text-align: right;
+}

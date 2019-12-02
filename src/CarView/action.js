@@ -17,7 +17,19 @@ export const getComments = (id)=>{
         dispatch(clearCommentsSuccess());
         fetch("/db/comments.json")
         .then(req=>req.json())
-        .then(data=>dispatch(getCommentsSuccess(data.filter(i=>i.productId==id))))
+        .then(data=>{
+                fetch("/db/users.json")
+                .then(req2=>req2.json())
+                .then(data2=>{
+                    let comments = [];
+                    data.filter(i=>i.productId==id).forEach((item)=>{
+                    let comment = {...item};
+                    comment.name = data2.find(i=>i.id==item.userId).name;
+                    comments.push(comment);
+                    })
+                    dispatch(getCommentsSuccess(comments));
+                })
+        })
     }
 }
 

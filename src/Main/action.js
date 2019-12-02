@@ -14,9 +14,13 @@ export const getProducts = ()=>{
 
 export const addUserFavorite=(userId,productId)=>{
         let fav = JSON.parse(localStorage.getItem('favorites'));
-        fav.push({userId:userId,productId:productId});
-        localStorage.setItem('favorites',JSON.stringify(fav));
-        alert("Добавлено в избранное!")
+        if(!fav.find(i=>i.userId==userId && i.productId==productId)){
+            fav.push({userId:userId,productId:productId});
+            localStorage.setItem('favorites',JSON.stringify(fav));
+            alert("Добавлено в избранное!")
+        }else{
+            alert("Данный транспорт уже есть в избранном!")
+        }
 }
 
 export const getProductsSuccess = (products)=>(

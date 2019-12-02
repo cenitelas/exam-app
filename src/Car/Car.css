@@ -41,6 +41,7 @@ max-height: 125px;
 .car span:hover{
     color: rgba(255, 217, 0, 0.548);
     z-index: 99;
+    cursor: pointer;
 }
 
 a{

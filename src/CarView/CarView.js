@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container,Row,Col,Image} from 'react-bootstrap';
 import './CarView.css';
+import Comments from '../Comments/Comments';
 
 class CarView extends React.Component{
     componentDidMount(){
@@ -9,7 +10,6 @@ class CarView extends React.Component{
     }
     render(){
         let car = this.props.car;
-        console.log(this.props)
         return(
             <div className="carView">
                 {car && <Container>
@@ -26,7 +26,7 @@ class CarView extends React.Component{
                         </Col>
                     </Row>
                 </Container>}
-                {this.props.comments && this.props.comments.map((item,i)=><h1>{item.text}</h1>)}
+                <Comments comments={this.props.comments}></Comments>
             </div>
         )
     }
