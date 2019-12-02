@@ -1,5 +1,8 @@
-export const GET_PRODUCTS_SUCCESS = "GET_PRODUCTS_SUCCESS";
 export const GET_CATEGORIES_SUCCESS = "GET_CATEGORIES_SUCCESS";
+export const SET_FILTER_SUCCESS = "SET_FILTER_SUCCESS";
+export const SEARCH_SUCCESS = "SEARCH_SUCCESS";
+export const GET_PRODUCTS_SUCCESS = "GET_PRODUCTS_SUCCESS";
+
 
 export const getProducts = ()=>{
     return dispatch=>{
@@ -9,12 +12,20 @@ export const getProducts = ()=>{
     }
 }
 
+export const addUserFavorite=(userId,productId)=>{
+        let fav = JSON.parse(localStorage.getItem('favorites'));
+        fav.push({userId:userId,productId:productId});
+        localStorage.setItem('favorites',JSON.stringify(fav));
+        alert("Добавлено в избранное!")
+}
+
 export const getProductsSuccess = (products)=>(
     {
         type:GET_PRODUCTS_SUCCESS,
         obj:products
     }
 )
+
 
 export const getCategories = ()=>{
     return dispatch=>{
@@ -28,5 +39,19 @@ export const getCategoriesSuccess = (categories)=>(
     {
         type:GET_CATEGORIES_SUCCESS,
         obj:categories
+    }
+)
+
+export const setFilter = (filter)=>(
+    {
+        type:SET_FILTER_SUCCESS,
+        obj:filter
+    }
+)
+
+export const searchItem = (text)=>(
+    {
+        type:SEARCH_SUCCESS,
+        obj:text
     }
 )

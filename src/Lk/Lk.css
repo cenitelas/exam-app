@@ -1,0 +1,29 @@
+.lk{
+    background-color: rgba(128, 128, 128, 0.295);
+    margin: 0 auto;
+    width: 70%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.lk .link{
+    margin: 20px;
+}
+
+.lk a{
+    height: 30px;
+    color: black;
+    border-bottom: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+}
+
+.lk a:hover{
+    text-decoration: none;
+    background-color: black;
+    color:  white;
+    cursor: pointer;
+    border-radius: 5px;
+}

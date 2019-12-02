@@ -1,4 +1,6 @@
-import {products,categories} from './Main/reducer';
+import {categories,filter,search,products} from './Main/reducer';
+import {user,error} from './Logon/reducer'
+import {userProducts, favorites} from './Lk/reducer'
 import {combineReducers} from 'redux';
 
-export default()=>combineReducers({products,categories});
+export default()=>combineReducers({products,categories,filter,search,user,error,userProducts,favorites});

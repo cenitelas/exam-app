@@ -1,0 +1,26 @@
+.head{
+    width: 70%;
+    height: 75px;
+    border-bottom: 1px solid black;
+    margin: 10px auto 30px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.head *{
+padding: 0 10px;
+}
+
+.head a{
+    height: 30px;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.head a:hover{
+    text-decoration: none;
+    background-color: black;
+    color:  white;
+    cursor: pointer;
+    border-radius: 5px;
+}

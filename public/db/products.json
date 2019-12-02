@@ -1,7 +1,7 @@
 [{
     "id":1,
     "userId":1,
-    "categoryId":3,
+    "categoryId":4,
     "head": "Toyota Tacoma",
     "text": "Супер пупер",
     "date": "2019-11-20",
@@ -11,7 +11,7 @@
 {
     "id":2,
     "userId":3,
-    "categoryId":1,
+    "categoryId":2,
     "head": "Porsche 718 Cayman",
     "text": "Супер пупер",
     "date": "2018-04-10",
@@ -21,17 +21,17 @@
 {
     "id":3,
     "userId":1,
-    "categoryId":4,
+    "categoryId":5,
     "head": "VolksWagen Tiguan",
     "text": "Супер пупер",
-    "date": "2019-5-15",
+    "date": "2019-05-15",
     "image": "https://img2.automoto.ua/overview/Volkswagen-Tiguan-2019-fd6-huge-1311.jpg",
     "price": 300
 },
 {
     "id":4,
     "userId":5,
-    "categoryId":2,
+    "categoryId":3,
     "head": "Scania S 620",
     "text": "Супер пупер",
     "date": "2018-12-14",
@@ -41,7 +41,7 @@
 {
     "id":5,
     "userId":4,
-    "categoryId":5,
+    "categoryId":6,
     "head": "VolksWagen T6 Multivan",
     "text": "Супер пупер",
     "date": "2019-09-11",

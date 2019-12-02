@@ -1,0 +1,33 @@
+.car{
+    margin: 20px auto;
+    width: 60%;
+    background-color: rgba(128, 128, 128, 0.075);
+    border-radius: 5px;
+    height: 150px;
+    padding: 10px 0;
+}
+
+.car img{
+width: 200px;
+max-height: 125px;
+}
+
+.car:hover{
+    background-color: rgba(128, 128, 128, 0.24);
+    cursor: pointer;
+}
+
+.car h3{
+    color: rgba(0, 0, 0, 0.822);
+}
+
+.car span{
+    margin: 10px;
+    font-size: 200%;
+    color: gold;
+    text-shadow: 0 0 2px black;
+}
+
+.car span:hover{
+    color: rgba(255, 217, 0, 0.548);
+}

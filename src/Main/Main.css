@@ -1,0 +1,14 @@
+.main{
+    width: 100vw;
+}
+
+.main .search{
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .search input{
+width: 300px;
+}
